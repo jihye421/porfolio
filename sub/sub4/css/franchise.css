@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+
+@font-face {
+    font-family: "JejuMyeongjo";
+    src: url(../font/jejuMyeongjo.eot) format('embeded-opentype'), url(../font/jejuMyeongjo.woff) format('woff');
+}
+
+
+section {
+    width: 1280px;
+    margin: 0 auto;
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: -0.5px;
+}
+main {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 140px;
+    width: 100%;
+    max-width: 1920px;
+    height: 550px;
+    background: url(../img/main_1.png) no-repeat center;
+    text-align: center;
+}
+main h3 {
+    font-family: 'Montserrat', sans-serif;
+   font-size: 40px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 220px;
+    padding-bottom: 20px;
+   /* outline: 2px solid red;*/
+}
+.maintxt p {
+    font-family: "JejuMyeongjo";
+    font-size: 22px;
+    color: #fff;
+    letter-spacing: 0.8px;
+    /*outline: 2px solid red;*/
+}
+
+/*******가맹조건**************/
+.condition {
+    padding-top: 150px;
+    position: relative;
+}
+.condition:before {
+    content: "";
+    width: 2px;
+    height: 30px;
+    margin-right: 20px;
+    background-color: #ccc;
+    display: inline-block;
+    position: relative;
+    top: 9px; 
+    
+}
+.condition h3 {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.underbar {
+    content: "";
+    width: 1280px;
+    height: 1px;
+    background-color: #ddd;
+    /*border-bottom: 1px;*/
+    display: block;
+    position: relative;
+    top: 10px;
+}
+.fran_video {
+    width: 1000px;
+    height: 550px;
+   margin: 0 auto;
+    padding: 130px 0;
+}
+.fran_video iframe {
+    width: 1000px;
+    height: 550px;
+    border-radius: 30px;
+}
+
+table {
+    border-top: 2px solid #cdcdcd;
+    border-bottom: 2px solid #cdcdcd;
+    border-collapse: collapse;
+    width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+th,td {
+    border-top: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
+    border-collapse: collapse;
+    padding: 20px 0;
+    box-sizing: border-box;
+    text-indent: 10px;
+    border-left: 0;
+    text-align: center;
+}
+th.last, td.last {
+    border-right: 0;
+}
+.interior {
+    text-align: left;
+    line-height: 25px;
+    padding-left: 40px;
+    text-indent: 0;
+}
+.cost {
+    text-align: left;
+    padding-left: 40px;
+    text-indent: 0;
+}
+.vat {
+    display: inline-block;
+    position: absolute;
+    bottom: 890px;
+    right: 140px;
+}
+.caption {
+    display: inline-block;
+    position: absolute;
+    right:140px;
+    bottom: -25px;
+    
+}

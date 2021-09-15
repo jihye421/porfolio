@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>양키캔들 - 창업스토리</title>
+
+    <!--웹폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sub_footer.css">
+    <link rel="stylesheet" href="css/story.css">
+    
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/story.js"></script>
+    <script>
+    $(function(){
+    
+    $('.gnb>li').mouseenter(function(){
+        
+        
+        $('.cover').stop().animate({
+            height: '60px'
+        }, 600);
+        
+        $('.sub').hide();
+        
+        $(this).children('.sub').stop().slideDown();
+    });
+    
+    $('nav').mouseleave(function(){
+       
+        $('.sub').stop().slideUp(600);
+        
+        $('.cover').stop().animate({
+            height: 0
+        }, 600);
+    });
+    
+});
+</script>
+</head>
+
+<body>
+
+    <header>
+        <span class="cover"></span>
+        <div class="inner_header">
+            <h1><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">About</a>
+                        <ul class="sub">
+                            <li><a href="#">창업스토리</a></li>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                        <ul class="sub">
+                            <li><a href="#">캔들</a></li>
+                            <li><a href="#">디퓨저</a></li>
+                            <li><a href="#">워머/악세사리</a></li>
+                            <li><a href="#">기프트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Franchise</a>
+                        <ul class="sub">
+                            <li><a href="#">가맹조건</a></li>
+                            <li><a href="#">가맹문의</a></li>
+                        </ul>
+                    </li>
+                    <li class="on"><a href="#">Online Store</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <section>
+        <div class="story1">
+            <div class="txtwrap1">
+                <h2>COMPANY</h2>
+                <h3>"작지만 아름다운 시작"</h3>
+                <p>양키캔들의 설립자인 마이크 키트리지(Mike Kittredge)는 그의 나이 17살 때인<br>
+                    1969년 미국 동북부 메사추세스주에 있는 작은 농촌마을 디어필드(Deerfield)의 부모님 집 지하실에서<br>
+                    처음으로 향초를 만들었습니다.</p>
+
+                <p>
+                    어머님께 드릴 선물을 살 형편이 안되어 쓰고 버린 우유팩을 이용해 향초 2개를 만들었고,<br>
+                    마이크가 향초를 만든다는 사실을 안 이웃사람들은 마이크가 만든 초를 사고 싶어 했다고 합니다.<br>
+                    마이크는 그가 만든 초를 이웃사람들이 사고 싶어한다는 사실을 처음에는 믿을 수 없었지만,<br>
+                    두 개의 초를 만들어 하나는 어머님께 선물했고 또 다른 하나는 이웃에 팔았습니다.
+                </p>
+            </div>
+        </div>
+
+        <div class="story2">
+            <div class="txtwrap2">
+                <h2>YANKEE CANDLE</h2>
+                <h3>이 스토리가 양키캔들 (YANKEE CANDLE COMPANY)의<br>
+                    초라하면서도 아름다운 시작이었습니다.</h3>
+
+                <p>
+                    그 후 마이크의 작은 시작은 가내 수공업으로 이어졌고,<br>
+                    즐거운 마음으로 최상의 향초를 제조하겠다는 신념을 갖게 되었습니다.<br>
+                    그의 신념과 향초에 대한 열정을 지지하는 사람들이 모여 사업이 점차적으로 확장되어 갔습니다.<br>
+                    초창기 그의 사업이 위기에 봉착 했을 때 최상의 향초를 제조한다는 신념이 흔들릴 뻔 했으나,<br>
+                    끝까지 포기하지 않고, 지금까지도 최상의 제품을 제조한다는 기업 철학을 담아
+                    초지일관의 자세로 양키캔들을 생산하고 있습니다.<br>
+                    창업자 마이크는 아이들의 상상 속에 있는 아름다운 향기를 현실로 만들어낸 진정한 향초 애호가입니다.
+                </p>
+
+                <p>
+                    소년 마이크의 초라한 시작에서 세계적 명품 향초 브랜드를 만들어낸<br>
+                    성공 신화는 아메리칸 드림의 전형적인 성공 사례로 인정받고 있습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+
+        <div class="inner_footer">
+
+            <img src="img/ft_logo.png" alt="푸터로고">
+            <div class="footer_top">
+                <div class="sitemap clear">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">법적고지</a>
+                </div>
+                <div class="footer_left">
+                    <p>(주)아로마글로바 대표 : 임미숙 사업자번호 : 220-81-99275 통신판매업신고 : 2014-충북충주-167<br>
+                        본사/물류센터 : 27465)충청북도 충주시 기업도시2로 27 (영평리 571)<br>
+                        서울사무소 : 06087) 서울시 강남구 영동대로 607, 9층 (삼성동, 랜드마크타워)</p>
+
+                </div>
+                <div class="footer_right">
+                    <img src="img/footer_img.png" alt="">
+                    <div class="ft_txt clear">
+                        <p>한국프랜차이즈대상<br>
+                            신생브랜드부분 대상</p>
+                        <p>소상공인시장진흥공단<br>
+                            이사장 표창</p>
+                        <p>중소기업인의 날<br>
+                            국무총리표창 </p>
+                        <p>국가생산성대상<br>
+                            산업통산자원부장관 표창</p>
+                    </div>
+                </div>
+
+                <p class="copy">Copyright AromaGlobal. All rights reserved.<br>
+                    본 사이트에 게시된 자료에 대한 권리는 (주)아로마글로바에 있으며, 정보를 가공·판매하는 행위 등 서비스에 게시된 자료를 영리목적으로 사용할 수 없습니다.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

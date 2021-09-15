@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>YANKEE CANDLE-Product</title>
+
+    <!--웹폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Sans&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sub_footer.css">
+    <link rel="stylesheet" href="css/product.css">
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <!--<script src="js/submenu.js"></script>-->
+    
+    <script>
+    $(function(){
+    
+    $('.gnb>li').mouseenter(function(){
+        
+        
+        $('.cover').stop().animate({
+            height: '60px'
+        }, 600);
+        
+        $('.sub').hide();
+        
+        $(this).children('.sub').stop().slideDown();
+    });
+    
+    $('nav').mouseleave(function(){
+       
+        $('.sub').stop().slideUp(600);
+        
+        $('.cover').stop().animate({
+            height: 0
+        }, 600);
+    });
+    
+});
+</script>
+
+
+</head>
+
+<body>
+    <header>
+        <!--<div class="wrap on"></div>-->
+        <span class="cover"></span>
+        <div class="inner_header">
+            <h1><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">About</a>
+                        <ul class="sub">
+                            <li><a href="#">창업스토리</a></li>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                        <ul class="sub">
+                            <li><a href="#">캔들</a></li>
+                            <li><a href="#">디퓨저</a></li>
+                            <li><a href="#">워머/악세사리</a></li>
+                            <li><a href="#">기프트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Franchise</a>
+                        <ul class="sub">
+                            <li><a href="#">가맹조건</a></li>
+                            <li><a href="#">가맹문의</a></li>
+                        </ul>
+                    </li>
+                    <li class="on"><a href="#">Online Store</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="maintxt">
+            <h3>CANDLE</h3>
+            <p>양키캔들과 함께하는 모든 행복한 순간,</p>
+        </div>
+    </main>
+    
+    <section>
+        <div class="menu">
+            <ul class="clearfix">
+                <li><a href="#" class="on">자캔들</a></li>
+                <li><a href="#">엘리베이션</a></li>
+                <li><a href="#">타트왁스</a></li>
+                <li><a href="#">티라이트</a></li>
+            </ul>
+        </div>
+
+       
+
+        <p class="location">Product > 캔들 > 자캔들</p>
+
+        <div class="flavor clearfix">
+            <a href="#">All</a>
+            <a href="#">fruit</a>
+            <a href="#">Fresh</a>
+            <a href="#">Floral</a>
+            <a href="#">Festive</a>
+            <a href="#">Food &amp; Spice</a>
+        </div>
+
+        <div class="new">
+           <h2>NEW</h2>
+            <ul>
+                <li><a href="#"><img src="img/new_img1.PNG" alt="카멜리아 블라썸"></a>
+                    <p>카멜리아 블라썸</p>
+                        <p class="gray">Camellia Blossom</p>
+                    
+                </li>
+
+                <li><a href="#"><img src="img/new_img2.PNG" alt="홈메이드 허브 레모네이드"></a>
+                    <p>홈메이드 허브 레모네이드</p>
+                        <p class="gray">Homemade Herb Lemonade</p>
+                    
+                </li>
+
+                <li><a href="#"><img src="img/new_img3.PNG" alt="클리프사이드 선라이즈"></a>
+                    <p>클리프사이드 선라이즈</p>
+                        <p class="gray">Cliffside Sunrise</p>
+                    
+                </li>
+
+                <li><a href="#"><img src="img/new_img4.PNG" alt="비치 이스케이프"></a>
+                    <p>비치 이스케이프</p>
+                        <p class="gray">Beach Escape</p>
+                    
+                </li>
+
+                <li><a href="#"><img src="img/new_img5.PNG" alt="웜 앤 코지"></a>
+                    <p>웜 앤 코지</p>
+                        <p class="gray">Warm and Cozy</p>
+                    
+                </li>
+
+                <li><a href="#"><img src="img/new_img6.PNG" alt="어텀 앰버"></a>
+                    <p>어텀 앰버</p>
+                        <p class="gray">Autumn Embers</p>
+                    
+                </li>
+            </ul>
+            <span class="new_line"></span>
+            <div class="new_underbar"></div>
+            
+            <!--화살표-->
+            <a href="#" class="abtn btnL"><img src="img/arw_left_gray.png" alt="왼쪽"></a>
+            <a href="#" class="abtn btnR"><img src="img/arw_right_gray.png" alt="오른쪽"></a>
+            
+        </div>
+
+        <div class="product">
+            <ul>
+                <li>
+                    <a href="#"><img src="img/img_1.PNG" alt="가든 피크닉"></a>
+                    <p>가든 피크닉</p>
+                        <p class="gray">Garden Picnic</p>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="img/img_2.PNG" alt="워터 가든"></a>
+                    <p>워터 가든</p>
+                        <p class="gray">Water Garden</p>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="img/img_3.PNG" alt="세이지&시트러스"></a>
+                    <p>세이지 &amp; 시트러스</p>
+                        <p class="gray">Sage &amp; Citrus</p>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="img/img_4.PNG" alt="비치워크"></a>
+                    <p>비치워크</p>
+                        <p class="gray">Beach Walk</p>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="img/img_5.PNG" alt="핑크샌드"></a>
+                    <p>핑크샌드</p>
+                        <p class="gray">Pink Sands</p>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="img/img_6.PNG" alt="웨딩데이"></a>
+                    <p>웨딩데이</p>
+                        <p class="gray">Wedding Day</p>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="img/img_7.PNG" alt="가든 스윗 피"></a>
+                    <p>가든 스윗 피</p>
+                        <p class="gray">Garden Sweet Pea</p>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="img/img_8.PNG" alt="클린코튼"></a>
+                    <p>클린코튼</p>
+                        <p class="gray">Clean Cotton</p>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="img/img_9.PNG" alt="썬 드렌치드 애프리콧 로즈"></a>
+                    <p>썬 드렌치드 애프리콧 로즈</p>
+                        <p class="gray">Sun Drenched Apricot Rose</p>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="img/img_10.PNG" alt="스위트 모닝 로즈"></a>
+                    <p>스위트 모닝 로즈</p>
+                        <p class="gray">Sweet Morning Rose</p>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="img/img_11.PNG" alt="플로럴 캔디"></a>
+                    <p>플로럴 캔디</p>
+                        <p class="gray">Floral Candy</p>
+                    
+                </li>
+                <li>
+                    <a href="#"><img src="img/img_12.PNG" alt="린덴 트리"></a>
+                    <p>린덴 트리</p>
+                        <p class="gray">Linden Tree</p>
+                </li>
+            </ul>
+        </div>
+
+
+    </section>
+    <div class="pager">
+        <a href="#"><img src="img/db_arw2_left.png" alt="맨 앞"></a>
+        <a href="#"><img src="img/arw1_left.png" alt="이전"></a>
+
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"><img src="img/arw1_right.png" alt="다음"></a>
+        <a href="#"><img src="img/db_arw2_right.png" alt="맨 끝"></a>
+
+    </div>
+
+    <footer>
+
+        <div class="inner_footer">
+
+            <img src="img/ft_logo.png" alt="푸터로고">
+            <div class="footer_top">
+                <div class="sitemap clear">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">법적고지</a>
+                </div>
+                <div class="footer_left">
+                    <p>(주)아로마글로바 대표 : 임미숙 사업자번호 : 220-81-99275 통신판매업신고 : 2014-충북충주-167<br>
+                        본사/물류센터 : 27465)충청북도 충주시 기업도시2로 27 (영평리 571)<br>
+                        서울사무소 : 06087) 서울시 강남구 영동대로 607, 9층 (삼성동, 랜드마크타워)</p>
+
+                </div>
+                <div class="footer_right">
+                    <img src="img/footer_img.png" alt="상장">
+                    <div class="ft_txt clear">
+                        <p>한국프랜차이즈대상<br>
+                            신생브랜드부분 대상</p>
+                        <p>소상공인시장진흥공단<br>
+                            이사장 표창</p>
+                        <p>중소기업인의 날<br>
+                            국무총리표창 </p>
+                        <p>국가생산성대상<br>
+                            산업통산자원부장관 표창</p>
+                    </div>
+                </div>
+
+                <p class="copy">Copyright AromaGlobal. All rights reserved.<br>
+                    본 사이트에 게시된 자료에 대한 권리는 (주)아로마글로바에 있으며, 정보를 가공·판매하는 행위 등 서비스에 게시된 자료를 영리목적으로 사용할 수 없습니다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

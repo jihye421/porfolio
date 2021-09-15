@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가맹조건</title>
+
+    <!--웹폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sub_footer.css">
+    <link rel="stylesheet" href="css/franchise.css">
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <!--<script src="js/submenu.js"></script>-->
+    
+    <script>
+    $(function(){
+    
+    $('.gnb>li').mouseenter(function(){
+        
+        
+        $('.cover').stop().animate({
+            height: '60px'
+        }, 600);
+        
+        $('.sub').hide();
+        
+        $(this).children('.sub').stop().slideDown();
+    });
+    
+    $('nav').mouseleave(function(){
+       
+        $('.sub').stop().slideUp(600);
+        
+        $('.cover').stop().animate({
+            height: 0
+        }, 600);
+    });
+    
+});
+</script>
+
+
+</head>
+
+<body>
+   <header>
+        
+        <span class="cover"></span>
+        <div class="inner_header">
+            <h1><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">About</a>
+                        <ul class="sub">
+                            <li><a href="#">창업스토리</a></li>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                        <ul class="sub">
+                            <li><a href="#">캔들</a></li>
+                            <li><a href="#">디퓨저</a></li>
+                            <li><a href="#">워머/악세사리</a></li>
+                            <li><a href="#">기프트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Franchise</a>
+                        <ul class="sub">
+                            <li><a href="#">가맹조건</a></li>
+                            <li><a href="#">가맹문의</a></li>
+                        </ul>
+                    </li>
+                    <li class="on"><a href="#">Online Store</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="maintxt">
+            <h3>FRANCHISE</h3>
+            <p>창업 성공의 꿈, 양키캔들과 함께하세요!</p>
+        </div>
+    </main>
+    <section>
+
+        <div class="condition">
+            <h3>가맹조건</h3>
+            <div class="underbar"></div>
+            <div class="fran_video">
+                <iframe src="https://www.youtube.com/embed/te5NJL-3Ds0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+           <span class="vat">[단위 : 천원/VAT 별도]</span>
+            <table>
+                <tr>
+                    <th width="20%">항목</th>
+                    <th width="20%">내용</th>
+                    <th width="20%">39.66㎥(약 12평기준)</th>
+                    <th width="40%" class="last">비고</th>
+                </tr>
+                <tr>
+                    <th>가맹비</th>
+                    <td>브랜드사용, 경영지도</td>
+                    <td>8,000</td>
+                    <td class="last">소멸성 비용</td>
+                </tr>
+                <tr>
+                    <th>이행보증금</th>
+                    <td>계약 이행 담보</td>
+                    <td>1,000</td>
+                    <td class="last">계약 종료시 반환/부가세 없음</td>
+                </tr>
+                <tr>
+                    <th>교육비</th>
+                    <td>상품/매장운영 교육</td>
+                    <td>1,000</td>
+                    <td class="last">소멸성 비용</td>
+                </tr>
+                <tr>
+                    <th rowspan="3">인테리어</th>
+                    <td>실내 인테리어</td>
+                    <td>20,000</td>
+                    <td class="last">기본 실내인테리어 기준</td>
+                </tr>
+                <tr>
+                    <td>전면간판(조명형)</td>
+                    <td>4,000</td>
+                    <td class="last">전면 4m, 높이 1m 기준 (사이즈 초과시 추가비용 발생)</td>
+                </tr>
+                <tr>
+                    <td>원목가구 등</td>
+                    <td>20,000</td>
+                    <td class="last">벽장 12개 (원목+철제)</td>
+                </tr>
+                <tr>
+                    <th>POS설치</th>
+                    <td>POS</td>
+                    <td>1,100</td>
+                    <td class="last">월사용료 있음</td>
+                </tr>
+                <tr>
+                    <th colspan="2">합계</th>
+                    <td>55,100</td>
+                    <td class="last"></td>
+                </tr>
+                <tr>
+                    <th rowspan="3">비고</th>
+                    <td colspan="3" class="interior last">&lt; 인테리어 &gt;<br>
+                        - 실측 및 도면협의시 기본메뉴얼 이외의 내용은 추가비용 발생함<br>
+                        - 철거, 파사드 교체, 전기승압, 소방설비 이전, 상하수도시설, 조명추가, 바닥미장, 간판기본사이즈 외 규격,<br>
+                        전면외부 기둥, 에어컨, 창고선반 등 매장상황에 따라 추가비용 발생<br>
+                        - 백화점, 쇼핑몰의 경우에는 도면컨펌 비용 및 업체지정사양 등에 따라 추가비용 발생<br>
+                        - 지방(서울 제외)의 경우, 기본공사 금액의 5% 추가됨<br>
+                        - 원목가구는 매장상황에 따라 추가제작에 따른 비용 발생함<br>
+                        - 자체 시공의경우, 감리비 발생<br></td>
+                </tr>
+                <tr>
+
+                    <td colspan="3" class="cost last">초도물품대금 : 38,000천원 내외 (홍보물 포함, 매장 면적 및 신상품도입에 따라변동 가능) </td>
+
+                </tr>
+                <tr>
+
+                    <td colspan="3" class="cost last">점포 비용(임차보증금 및 권리금) 별도</td>
+
+                </tr>
+            </table>
+            <p class="caption">※ 매장상황에 따라 변경될 수 있습니다.</p>
+        </div>
+    </section>
+
+    <footer>
+
+        <div class="inner_footer">
+
+            <img src="img/ft_logo.png" alt="푸터로고">
+            <div class="footer_top">
+                <div class="sitemap clear">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">법적고지</a>
+                </div>
+                <div class="footer_left">
+                    <p>(주)아로마글로바 대표 : 임미숙 사업자번호 : 220-81-99275 통신판매업신고 : 2014-충북충주-167<br>
+                        본사/물류센터 : 27465)충청북도 충주시 기업도시2로 27 (영평리 571)<br>
+                        서울사무소 : 06087) 서울시 강남구 영동대로 607, 9층 (삼성동, 랜드마크타워)</p>
+
+                </div>
+                <div class="footer_right">
+                    <img src="img/footer_img.png" alt="상장">
+                    <div class="ft_txt clear">
+                        <p>한국프랜차이즈대상<br>
+                            신생브랜드부분 대상</p>
+                        <p>소상공인시장진흥공단<br>
+                            이사장 표창</p>
+                        <p>중소기업인의 날<br>
+                            국무총리표창 </p>
+                        <p>국가생산성대상<br>
+                            산업통산자원부장관 표창</p>
+                    </div>
+                </div>
+
+                <p class="copy">Copyright AromaGlobal. All rights reserved.<br>
+                    본 사이트에 게시된 자료에 대한 권리는 (주)아로마글로바에 있으며, 정보를 가공·판매하는 행위 등 서비스에 게시된 자료를 영리목적으로 사용할 수 없습니다.</p>
+            </div>
+        </div>
+    </footer>
+</body></html>

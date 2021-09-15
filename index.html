@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>양키캔들</title>
+
+    <!--웹폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Sans&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/index.js"></script>
+    
+    <script>
+    $(function(){
+    
+    $('.gnb>li').mouseenter(function(){
+        
+        
+        $('.cover').stop().animate({
+            height: '60px'
+        }, 600);
+        
+        $('.sub').hide();
+        
+        $(this).children('.sub').stop().slideDown();
+    });
+    
+    $('nav').mouseleave(function(){
+       
+        $('.sub').stop().slideUp(600);
+        
+        $('.cover').stop().animate({
+            height: 0
+        }, 600);
+    });
+    
+});
+</script>
+</head>
+
+<body>
+    <header>
+        
+        <span class="cover"></span>
+        <div class="inner_header">
+            <h1><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">About</a>
+                        <ul class="sub">
+                            <li><a href="#">창업스토리</a></li>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                        <ul class="sub">
+                            <li><a href="#">캔들</a></li>
+                            <li><a href="#">디퓨저</a></li>
+                            <li><a href="#">워머/악세사리</a></li>
+                            <li><a href="#">기프트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Franchise</a>
+                        <ul class="sub">
+                            <li><a href="#">가맹조건</a></li>
+                            <li><a href="#">가맹문의</a></li>
+                        </ul>
+                    </li>
+                    <li class="on"><a href="#">Online Store</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="viewer">
+            <ul class="slider">
+                <li>
+                    <a href="#"><img src="img/main1.png" alt="슬라이드1"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/main2.png" alt="슬라이드2"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="img/main3.png" alt="슬라이드3"></a>
+                </li>
+            </ul>
+
+
+            <!-------------------슬라이더 버튼----------------------->
+            <div id="sliderBtn">
+                <!--<p><b>1</b>&nbsp;/&nbsp;3</p>-->
+                <div class="line"></div>
+                <div class="slider_bar"></div>
+                <a href="#" class="sliderIco"><img src="img/page_ico.png" alt=""></a>
+            </div>
+
+            <!--<span class="abtn btnL"></span>
+            <span class="abtn btnR"></span>-->
+        </div>
+    </main>
+
+    <section>
+        <div class="product">
+            <div class="best">
+                <div class="best_img">
+                    <h2>BEST&nbsp;SELLER</h2>
+                    <img src="img/best_big.png" alt="베스트셀러">
+                </div>
+
+                <div class="best_txt">
+                    <h3>양키캔들과 함께하는<br>모든 행복한 순간,</h3>
+                    <p>나와 나를 둘러싼 모든 일상이<br>더 아름다워집니다
+                        <br>꾸준하게 사랑받는 베스트 셀러를 만나보세요
+                    </p>
+
+                    <a href="#" class="btn">MORE</a>
+                </div>
+                <div class="best_list clear">
+                    <div class="small_img">
+                        <a href="#"><img src="img/best1.png" alt="블랙체리">
+                            <p>블랙체리</p>
+                        </a>
+                    </div>
+                    <div class="small_img">
+                        <a href="#"><img src="img/best2.png" alt="미드썸머나잇">
+                            <p>미드썸머나잇</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="new">
+                <div class="new_txt">
+                    <h3>향기가 필요한 순간,</h3>
+                    <p>내마음을 알아주는 캔들워머 기프트세트와<br>파라다이스 콜렉션 2종을 만나보세요
+                    </p>
+
+                    <a href="#" class="btn">MORE</a>
+                </div>
+
+                <div class="new_img">
+                    <h2>WHAT'S NEW</h2>
+                    <img src="img/new_big.png" alt="신제품">
+                </div>
+
+                <div class="new_list">
+                    <div class="small_img">
+                        <a href="#">
+                            <img src="img/new1.png" alt="허리케인 빈티지+자캔들 세트">
+                            <p>허리케인 빈티지<br>+ 자캔들 세트</p>
+                        </a>
+                    </div>
+                    <div class="small_img">
+                        <a href="#">
+                            <img src="img/new2.png" alt="비치 이스케이프">
+                            <p>비치 이스케이프</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gift">
+                <div class="gift_img">
+                    <h2>GIFT&nbsp;COLLECTION</h2>
+                    <img src="img/gift_big.png" alt="기프트사진">
+                </div>
+
+                <div class="gift_txt">
+                    <h3>편안하고 따스한 휴식,<br>싱그러운 향기</h3>
+                    <p>사랑하는 사람에게<br>기프트 세트로 선물해 보세요</p>
+
+                    <a href="#" class="btn">MORE</a>
+                </div>
+
+                <div class="gift_list clear">
+                    <div class="small_img">
+                        <a href="#">
+                            <img src="img/gift1.png" alt="차량용 6종세트">
+                            <p>차량용 6종세트</p>
+                        </a>
+                    </div>
+                    <div class="small_img">
+                        <a href="#">
+                            <img src="img/gift2.png" alt="자캔들 2종세트">
+                            <p>자캔들(중) 가든하이드어웨이<br>2종 세트</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="storeBtn">양키캔들 온라인스토어</a>
+        </div>
+
+        <div class="tv">
+            <h2>YANKEE TV</h2>
+
+            <div class="playbox">
+                <div class="box play1">
+                    <iframe src="https://www.youtube.com/embed/tHCfPXfrOc0" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <p>CANDLE CARE</p>
+                </div>
+                <div class="box play2">
+                    <iframe src="https://www.youtube.com/embed/bLQ8btaI1cs" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <p>2019 Limitid-바이브런트</p>
+                </div>
+                <div class="box play3">
+                    <iframe src="https://www.youtube.com/embed/rVR-KRJFnvw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <p>초음파 아로마 오일디퓨저</p>
+                </div>
+                <div class="box play4">
+                    <iframe src="https://www.youtube.com/embed/8uX1A-QfhZw" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <p>자캔들 공병 활용법</p>
+                </div>
+                <div class="box play5">
+                    <iframe width="950" height="570" src="https://www.youtube.com/embed/ClJFbgLx26Q" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+                    <p>양키캔들 투어</p>
+                </div>
+
+
+                <!---play3을 기준으로 좌우버튼-->
+                <a href="#" class="tvBtn left_arw"><img src="img/btn_left_roll_white.png" alt="이전"></a>
+                <a href="#" class="tvBtn right_arw"><img src="img/btn_right_roll_white.png" alt="다음"></a>
+
+            </div>
+
+            <!-------------------비디오 play버튼----------------------->
+            <!--<div class="playBtn"><a href="#"></a></div>-->
+
+
+            <!-----------------비디오 좌우화살표---------------->
+            
+        </div>
+
+        <div class="information">
+            <h2>YANKEE INFORMATION<span><a href="#">+</a></span></h2>
+            <div class="info_wrap">
+                <a href="#"><img src="img/info_img1.png" alt=""></a>
+                <a href="#"><img src="img/info_img2.png" alt=""></a>
+                <a href="#"><img src="img/info_img3.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="instagram">
+            <h2>FOLLOW US</h2>
+            <p>@yankeecandle_korea</p>
+
+            <div class="img_wrap clear">
+                <div class="image_box">
+                    <a href="#"><img src="img/sns_img1.png" alt="인스타1"></a>
+                </div>
+                <div class="image_box">
+                    <a href="#"><img src="img/sns_img2.png" alt="인스타2"></a>
+                </div>
+                <div class="image_box">
+                    <a href="#"><img src="img/sns_img3.png" alt="인스타3"></a>
+                </div>
+                <div class="image_box">
+                    <a href="#"><img src="img/sns_img4.png" alt="인스타4"></a>
+                </div>
+                <div class="image_box">
+                    <a href="#"><img src="img/sns_img5.png" alt="인스타5"></a>
+                </div>
+                <div class="image_box">
+                    <a href="#"><img src="img/sns_img6.png" alt="인스타6"></a>
+                </div>
+                <div class="image_box">
+                    <a href="#"><img src="img/sns_img7.png" alt="인스타7"></a>
+                </div>
+                <div class="image_box">
+                    <a href="#"><img src="img/sns_img8.png" alt="인스타8"></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="inner_notice">
+            <div class="notice_wrap">
+                <ul class="notice">
+                    <li><a href="#">공지사항&nbsp; | <span>▶</span>2021년 5월, 카드사 무이자할부 이벤트</a></li>
+                    <li><a href="#">공지사항&nbsp; | <span>▶</span>2021년 6월, 카드사 무이자할부 이벤트</a></li>
+                    <li><a href="#">공지사항&nbsp; | <span>▶</span>2021년 7월, 카드사 무이자할부 이벤트</a></li>
+                </ul>
+                <a href="#" class="more"><span>+더보기</span></a>
+                <div class="sns_ico clear">
+                    <a href="#">인스타</a>
+                    <a href="#">페이스북</a>
+                    <a href="#">트위터</a>
+                    <a href="#">유튜브</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="inner_footer">
+
+            <img src="img/ft_logo.png" alt="푸터로고">
+            <div class="footer_top">
+                <div class="sitemap clear">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">법적고지</a>
+                </div>
+                <div class="footer_left">
+                    <p>(주)아로마글로바 대표 : 임미숙 사업자번호 : 220-81-99275 통신판매업신고 : 2014-충북충주-167<br>
+                        본사/물류센터 : 27465)충청북도 충주시 기업도시2로 27 (영평리 571)<br>
+                        서울사무소 : 06087) 서울시 강남구 영동대로 607, 9층 (삼성동, 랜드마크타워)</p>
+
+                </div>
+                <div class="footer_right">
+                    <img src="img/footer_img.png" alt="상장">
+                    <div class="ft_txt clear">
+                        <p>한국프랜차이즈대상<br>
+                            신생브랜드부분 대상</p>
+                        <p>소상공인시장진흥공단<br>
+                            이사장 표창</p>
+                        <p>중소기업인의 날<br>
+                            국무총리표창 </p>
+                        <p>국가생산성대상<br>
+                            산업통산자원부장관 표창</p>
+                    </div>
+                </div>
+
+                <p class="copy">Copyright AromaGlobal. All rights reserved.<br>
+                    본 사이트에 게시된 자료에 대한 권리는 (주)아로마글로바에 있으며, 정보를 가공·판매하는 행위 등 서비스에 게시된 자료를 영리목적으로 사용할 수 없습니다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>가맹조건</title>
+
+    <!--웹폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Sans&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sub_footer.css">
+    <link rel="stylesheet" href="css/store.css">
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+    <script src="js/store.js"></script>
+    
+    <script>
+    $(function(){
+    
+    $('.gnb>li').mouseenter(function(){
+        
+        
+        $('.cover').stop().animate({
+            height: '60px'
+        }, 600);
+        
+        $('.sub').hide();
+        
+        $(this).children('.sub').stop().slideDown();
+    });
+    
+    $('nav').mouseleave(function(){
+       
+        $('.sub').stop().slideUp(600);
+        
+        $('.cover').stop().animate({
+            height: 0
+        }, 600);
+    });
+    
+});
+</script>
+
+</head>
+
+<body>
+    <header>
+        <!--<div class="wrap on"></div>-->
+        <span class="cover"></span>
+        <div class="inner_header">
+            <h1><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">About</a>
+                        <ul class="sub">
+                            <li><a href="#">창업스토리</a></li>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                        <ul class="sub">
+                            <li><a href="#">캔들</a></li>
+                            <li><a href="#">디퓨저</a></li>
+                            <li><a href="#">워머/악세사리</a></li>
+                            <li><a href="#">기프트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Franchise</a>
+                        <ul class="sub">
+                            <li><a href="#">가맹조건</a></li>
+                            <li><a href="#">가맹문의</a></li>
+                        </ul>
+                    </li>
+                    <li class="on"><a href="#">Online Store</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <div class="maintxt">
+            <h3>Find a Store <span class="line">|</span> <span class="kor">매장찾기</span></h3>
+        </div>
+    </main>
+    <section>
+        <div class="underbar"></div>
+        <div class="search">
+            <select name="" id="">
+                <option value="">시/도</option>
+                <option value="">서울특별시</option>
+                <option value="">경기도</option>
+                <option value="">인천광역시</option>
+                <option value="">대전광역시</option>
+                <option value="">충청북도</option>
+                <option value="">충청남도</option>
+                <option value="">강원도</option>
+                <option value="">경상북도</option>
+                <option value="">경상남도</option>
+                <option value="">제주도</option>
+                <option value="">울산광역시</option>
+                <option value="">부산광역시</option>
+                <option value="">광주광역시</option>
+                <option value="">전라북도</option>
+                <option value="">전라남도</option>
+                <option value="">대구광역시</option>
+                <option value="">세종특별자치시</option>
+            </select>
+            <select name="" id="">
+                <option value="">구/군</option>
+            </select>
+            <input type="text" placeholder="검색어를 입력하세요">
+            <input type="submit" value="검색">
+        </div>
+
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3186.633464413498!2d127.14506731528952!3d36.99468142990896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b31f6df122059%3A0x954a91756b5e13f1!2z7Iqk7YOA7ZWE65OcIOyViOyEsQ!5e0!3m2!1sko!2skr!4v1631243345707!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+        <ul class="table">
+            <li class="address">
+                <ul>
+                    <li>스타필드안성점</li>
+                    <li>경기 안성시 공도읍 서동대로 3980, 스타필드안성 3층 3185호</li>
+                    <li><a href="#" class="btn"><img src="img/down_arw.png" alt="펼치기"></a></li>
+                </ul>
+                <div class="address_sub">
+                    <div class="left"><a href="https://map.kakao.com/?urlX=532850&urlY=971178&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="320" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=532850&MY=971178&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+                    </div>
+
+                    <div class="right">
+                        <div class="txtwrap">
+                            <p>위치</p> <span class="txt">경기 안성시 공도읍 서동대로 3980, 스타필드안성 3층 3185호</span>
+                            <p>영업시간</p> <span class="txt">10:00 ~ 22:00</span>
+                            <p>휴일</p><span class="txt">연중무휴</span>
+                            <p>전화번호</p> <span class="txt">031-8092-1829</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="address">
+                <ul>
+                    <li>광명U스트리트몰점</li>
+                    <li>경기 광명시 양지로 11, 광명 유스트리트몰 B1 A128호</li>
+                    <li><a href="#" class="btn"><img src="img/down_arw.png" alt="펼치기"></a></li>
+                </ul>
+                <div class="address_sub">
+                    <div class="left">
+                    <a href="https://map.kakao.com/?urlX=473840&urlY=1088563&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="320" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=473840&MY=1088563&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+                    </div>
+                    <div class="right">
+                    <div class="txtwrap">
+                            <p>위치</p> <span class="txt">경기 광명시 양지로 11, 광명 유스트리트몰 B1 A128호</span>
+                            <p>영업시간</p> <span class="txt">11:00 ~ 21:00</span>
+                            <p>휴일</p><span class="txt">연중무휴</span>
+                            <p>전화번호</p> <span class="txt">02-897-0128</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="address">
+                <ul>
+                    <li>이마트원주점</li>
+                    <li>강원 원주시 북원로 1928, 이마트원주점 1층</li>
+                    <li><a href="#" class="btn"><img src="img/down_arw.png" alt="펼치기"></a></li>
+                </ul>
+                <div class="address_sub">
+                    <div class="left"><a href="https://map.kakao.com/?urlX=703652&urlY=1062486&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="320" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=703652&MY=1062486&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+                    </div>
+
+                    <div class="right">
+                        <div class="txtwrap">
+                            <p>위치</p> <span class="txt">강원 원주시 북원로 1928, 이마트원주점 1층</span>
+                            <p>영업시간</p> <span class="txt">11:00 ~ 22:00</span>
+                            <p>휴일</p><span class="txt">연중무휴</span>
+                            <p>전화번호</p> <span class="txt">033-742-0821</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="address">
+                <ul>
+                    <li>기흥리빙파워센터점</li>
+                    <li>경기 용인시 기흥구 신고매로 59, 기흥파워센터 B1층</li>
+                    <li><a href="#" class="btn"><img src="img/down_arw.png" alt="펼치기"></a></li>
+                </ul>
+                <div class="address_sub">
+                    <div class="left"><a href="https://map.kakao.com/?urlX=525347&urlY=1034533&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="320" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=525347&MY=1034533&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+                    </div>
+
+                    <div class="right">
+                        <div class="txtwrap">
+                            <p>위치</p> <span class="txt">경기 용인시 기흥구 신고매로 59, 기흥파워센터 B1층</span>
+                            <p>영업시간</p> <span class="txt">10:00 ~ 20:00</span>
+                            <p>휴일</p><span class="txt">연중무휴</span>
+                            <p>전화번호</p> <span class="txt">031-285-2441</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="address">
+                <ul>
+                    <li>청주오송점</li>
+                    <li>충북 청주시 흥덕구 오송읍 오송생명로 210, 1층</li>
+                    <li><a href="#" class="btn"><img src="img/down_arw.png" alt="펼치기"></a></li>
+                </ul>
+                 <div class="address_sub">
+                    <div class="left"><a href="https://map.kakao.com/?urlX=574250&urlY=870076&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="320" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=574250&MY=870076&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+                    </div>
+
+                    <div class="right">
+                        <div class="txtwrap">
+                            <p>위치</p> <span class="txt">충북 청주시 흥덕구 오송읍 오송생명로 210, 1층</span>
+                            <p>영업시간</p> <span class="txt">10:00 ~ 20:00</span>
+                            <p>휴일</p><span class="txt">연중무휴</span>
+                            <p>전화번호</p> <span class="txt">043-235-7121</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="address">
+                <ul>
+                    <li>온양온천점</li>
+                    <li>충북 청주시 흥덕구 오송읍 오송생명로 210, 1층</li>
+                    <li><a href="#" class="btn"><img src="img/down_arw.png" alt="펼치기"></a></li>
+                </ul>
+                 <div class="address_sub">
+                    <div class="left"><a href="https://map.kakao.com/?urlX=501017&urlY=911876&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="320" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=501017&MY=911876&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+                    </div>
+
+                    <div class="right">
+                        <div class="txtwrap">
+                            <p>위치</p> <span class="txt">충북 청주시 흥덕구 오송읍 오송생명로 210, 1층</span>
+                            <p>영업시간</p> <span class="txt">10:30 ~ 21:00</span>
+                            <p>휴일</p><span class="txt">연중무휴</span>
+                            <p>전화번호</p> <span class="txt">041-547-8887</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="address">
+                <ul>
+                    <li>타임스퀘어점</li>
+                    <li>서울 영등포구 영중로 15, 타임스퀘어 지하1층</li>
+                    <li><a href="#" class="btn"><img src="img/down_arw.png" alt="펼치기"></a></li>
+                </ul>
+                 <div class="address_sub">
+                    <div class="left"><a href="https://map.kakao.com/?urlX=478873&urlY=1116105&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="320" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=478873&MY=1116105&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+                    </div>
+
+                    <div class="right">
+                        <div class="txtwrap">
+                            <p>위치</p> <span class="txt">서울 영등포구 영중로 15, 타임스퀘어 지하1층</span>
+                            <p>영업시간</p> <span class="txt">11:00 ~ 22:00</span>
+                            <p>휴일</p><span class="txt">연중무휴</span>
+                            <p>전화번호</p> <span class="txt">02-3667-2878</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="address">
+                <ul>
+                    <li>홍대점</li>
+                    <li>서울 마포구 와우산로23길 38,1층</li>
+                    <li><a href="#" class="btn"><img src="img/down_arw.png" alt="펼치기"></a></li>
+                </ul>
+                 <div class="address_sub">
+                    <div class="left"><a href="https://map.kakao.com/?urlX=478875&urlY=1116103&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="320" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=478875&MY=1116103&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+                    </div>
+
+                    <div class="right">
+                        <div class="txtwrap">
+                            <p>위치</p> <span class="txt">경기 용인시 기흥구 신고매로 59, 기흥파워센터 B1층</span>
+                            <p>영업시간</p> <span class="txt">10:00 ~ 20:00</span>
+                            <p>휴일</p><span class="txt">연중무휴</span>
+                            <p>전화번호</p> <span class="txt">031-285-2441</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="address">
+                <ul>
+                    <li>천안카페앙프점</li>
+                    <li>충남 천안시 동남구 천안천변길 139</li>
+                    <li><a href="#" class="btn"><img src="img/down_arw.png" alt="펼치기"></a></li>
+                </ul>
+                 <div class="address_sub">
+                    <div class="left"><a href="https://map.kakao.com/?urlX=527932&urlY=912178&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="320" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=527932&MY=912178&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+                    </div>
+
+                    <div class="right">
+                        <div class="txtwrap">
+                            <p>위치</p> <span class="txt">충남 천안시 동남구 천안천변길 139</span>
+                            <p>영업시간</p> <span class="txt">09:00 ~ 23:00</span>
+                            <p>휴일</p><span class="txt">연중무휴</span>
+                            <p>전화번호</p> <span class="txt">041-577-3232</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="address last">
+                <ul>
+                    <li>부천스타필드점</li>
+                    <li>경기 부천시 옥길로 1, 스타필드시티 부천점 1층 1273호</li>
+                    <li><a href="#" class="btn"><img src="img/down_arw.png" alt="펼치기"></a></li>
+                </ul>
+                 <div class="address_sub">
+                    <div class="left"><a href="https://map.kakao.com/?urlX=458840&urlY=1100611&urlLevel=3&map_type=TYPE_MAP&map_hybrid=false" target="_blank"><img width="504" height="320" src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=458840&MY=1100611&S=0&IW=504&IH=310&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo" style="border:1px solid #ccc"></a>
+                    </div>
+
+                    <div class="right">
+                        <div class="txtwrap">
+                            <p>위치</p> <span class="txt">경기 부천시 옥길로 1, 스타필드시티 부천점 1층 1273호</span>
+                            <p>영업시간</p> <span class="txt">11:00 ~ 22:00</span>
+                            <p>휴일</p><span class="txt">연중무휴</span>
+                            <p>전화번호</p> <span class="txt">02-6386-1178</span>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <div class="pager">
+        <a href="#"><img src="img/db_arw2_left.png" alt=""></a>
+        <a href="#"><img src="img/arw1_left.png" alt=""></a>
+
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#"><img src="img/arw1_right.png" alt=""></a>
+        <a href="#"><img src="img/db_arw2_right.png" alt=""></a>
+
+    </div>
+
+    <footer>
+
+        <div class="inner_footer">
+
+            <img src="img/ft_logo.png" alt="푸터로고">
+            <div class="footer_top">
+                <div class="sitemap clear">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">법적고지</a>
+                </div>
+                <div class="footer_left">
+                    <p>(주)아로마글로바 대표 : 임미숙 사업자번호 : 220-81-99275 통신판매업신고 : 2014-충북충주-167<br>
+                        본사/물류센터 : 27465)충청북도 충주시 기업도시2로 27 (영평리 571)<br>
+                        서울사무소 : 06087) 서울시 강남구 영동대로 607, 9층 (삼성동, 랜드마크타워)</p>
+
+                </div>
+                <div class="footer_right">
+                    <img src="img/footer_img.png" alt="상장">
+                    <div class="ft_txt clear">
+                        <p>한국프랜차이즈대상<br>
+                            신생브랜드부분 대상</p>
+                        <p>소상공인시장진흥공단<br>
+                            이사장 표창</p>
+                        <p>중소기업인의 날<br>
+                            국무총리표창 </p>
+                        <p>국가생산성대상<br>
+                            산업통산자원부장관 표창</p>
+                    </div>
+                </div>
+
+                <p class="copy">Copyright AromaGlobal. All rights reserved.<br>
+                    본 사이트에 게시된 자료에 대한 권리는 (주)아로마글로바에 있으며, 정보를 가공·판매하는 행위 등 서비스에 게시된 자료를 영리목적으로 사용할 수 없습니다.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

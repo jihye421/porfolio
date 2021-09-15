@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>양키캔들</title>
+
+    <!--웹폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Nanum+Myeongjo&family=Noto+Sans&family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sub_footer.css">
+    <link rel="stylesheet" href="css/inquiry.css">
+
+    <script src="js/jquery-1.7.2.min.js"></script>
+    <script src="js/jquery-ui-1.12.1.min.js"></script>
+
+
+    <script>
+        $(function() {
+
+            $('.gnb>li').mouseenter(function() {
+
+
+                $('.cover').stop().animate({
+                    height: '60px'
+                }, 600);
+
+                $('.sub').hide();
+
+                $(this).children('.sub').stop().slideDown();
+            });
+
+            $('nav').mouseleave(function() {
+
+                $('.sub').stop().slideUp(600);
+
+                $('.cover').stop().animate({
+                    height: 0
+                }, 600);
+            });
+
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+
+        <span class="cover"></span>
+        <div class="inner_header">
+            <h1><a href="index.html"><img src="img/logo.png" alt="로고"></a></h1>
+
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a href="#">About</a>
+                        <ul class="sub">
+                            <li><a href="#">창업스토리</a></li>
+                            <li><a href="#">회사소개</a></li>
+                            <li><a href="#">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Product</a>
+                        <ul class="sub">
+                            <li><a href="#">캔들</a></li>
+                            <li><a href="#">디퓨저</a></li>
+                            <li><a href="#">워머/악세사리</a></li>
+                            <li><a href="#">기프트</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Support</a>
+                        <ul class="sub">
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Franchise</a>
+                        <ul class="sub">
+                            <li><a href="#">가맹조건</a></li>
+                            <li><a href="#">가맹문의</a></li>
+                        </ul>
+                    </li>
+                    <li class="on"><a href="#">Online Store</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="maintxt">
+            <h3>FRANCHISE</h3>
+            <p>창업 성공의 꿈, 양키캔들과 함께하세요!</p>
+        </div>
+    </main>
+    <section id="inquiry">
+        <div class="inner_section">
+            <h3>가맹문의</h3>
+            <div class="underbar"></div>
+
+            <div class="joinBox">
+                <form name="" method="post">
+                    <fieldset class="required">
+                        <legend>필수사항 입력<span>*</span></legend>
+
+                        <table>
+                            <tr>
+                                <th>성명<span>*</span></th>
+                                <td>
+                                    <input type="text" name="name" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>연락처<span>*</span></th>
+                                <td>
+                                    <input type="text" name="num" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>창업희망지역<span>*</span></th>
+                                <td>
+                                    <input type="text" name="name" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일<span>*</span></th>
+                                <td>
+                                    <input type="email" name="email">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>문의내용<span>*</span></th>
+                                <td>
+                                    <input type="text" name="contents">
+                                </td>
+                            </tr>
+
+                        </table>
+                    </fieldset>
+                    
+                    
+                    <p class="note">- 상담 신청에 대한 답변은 신청 시 기재한 메일 또는 유선으로 안내됩니다.<br>
+- 메일 주소 및 전화번호를 잘못 입력할 경우 답변이 불가할 수 있으므로 작성 시 꼭 확인하여 신청바랍니다.<br>
+- 보다 자세한 안내를 위해 위 제의 내용을 작성바라며, 담당자가 확인 후 개별 연락 드리겠습니다.</p>
+
+
+                    <input type="submit" value="등록" class="btn">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+
+        <div class="inner_footer">
+
+            <img src="img/ft_logo.png" alt="푸터로고">
+            <div class="footer_top">
+                <div class="sitemap clear">
+                    <a href="#">개인정보처리방침</a>
+                    <a href="#">이용약관</a>
+                    <a href="#">법적고지</a>
+                </div>
+                <div class="footer_left">
+                    <p>(주)아로마글로바 대표 : 임미숙 사업자번호 : 220-81-99275 통신판매업신고 : 2014-충북충주-167<br>
+                        본사/물류센터 : 27465)충청북도 충주시 기업도시2로 27 (영평리 571)<br>
+                        서울사무소 : 06087) 서울시 강남구 영동대로 607, 9층 (삼성동, 랜드마크타워)</p>
+
+                </div>
+                <div class="footer_right">
+                    <img src="img/footer_img.png" alt="상장">
+                    <div class="ft_txt clear">
+                        <p>한국프랜차이즈대상<br>
+                            신생브랜드부분 대상</p>
+                        <p>소상공인시장진흥공단<br>
+                            이사장 표창</p>
+                        <p>중소기업인의 날<br>
+                            국무총리표창 </p>
+                        <p>국가생산성대상<br>
+                            산업통산자원부장관 표창</p>
+                    </div>
+                </div>
+
+                <p class="copy">Copyright AromaGlobal. All rights reserved.<br>
+                    본 사이트에 게시된 자료에 대한 권리는 (주)아로마글로바에 있으며, 정보를 가공·판매하는 행위 등 서비스에 게시된 자료를 영리목적으로 사용할 수 없습니다.</p>
+            </div>
+        </div>
+    </footer>
+</body></html>

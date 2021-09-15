@@ -1,0 +1,568 @@
+@charset 'utf-8';
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+main {
+    width: 100%;
+
+}
+
+.viewer {
+    /*슬라이드가 보여지는 영역*/
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    margin-top: 140px;
+    position: relative;
+    /*안의요소를 잡기위한 기준*/
+    overflow: hidden;
+}
+
+.slider {
+    width: 300%;
+    position: relative;
+    left: 0;
+}
+
+.slider > li {
+    float: left;
+    /*width: 1280px;*/
+    width: 33.33%;
+}
+
+/*.slider>li>a {
+    display: block;
+}*/
+.slider > li > a img {
+    /* display: block;*/
+    width: 100%;
+    height: 100%;
+}
+
+#sliderBtn {
+    position: absolute;
+    bottom: 20%;
+    right: 100px;
+}
+
+#sliderBtn p {
+    font-family: 'Montserrat', sans-serif;
+}
+#sliderBtn .line {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 402px;
+    bottom: -80px;
+    background-color: #333;
+    height: 3px;
+    width: 166.66px;
+    z-index: 2;
+}
+#sliderBtn .slider_bar {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 70px;
+    bottom: -80px;
+    background-color: rgba(255,255,255,0.3);
+    height: 3px;
+    width: 500px;
+}
+#sliderBtn a.sliderIco {
+    display: block;
+    width: 9px;
+    height: 11px;
+    position: absolute;
+    bottom: -84px;
+    right: 40px;
+    overflow: hidden;
+}
+/*#sliderBtn a.sliderIco:hover img {
+    margin-left: -9px;
+}*/
+#sliderBtn a.sliderIco img {
+    display: block;
+}
+/*화살표 공통 CSS*/
+.abtn {
+    width: 35px;
+    height: 68px;
+    position: absolute;
+    top: 50%;
+    /*margin-top: -24.5px;*/
+    transform: translateY(-50%);
+    /*outline: 3px solid red;*/
+    cursor: pointer;
+}
+
+.abtn:hover {
+    opacity: 0.3;
+}
+
+/*.btnL {
+    left: 10px;
+    background: url(../img/left_ico.png) no-repeat;
+}
+
+.btnR {
+    right: 10px;
+    background: url(../img/right_ico.png) no-repeat;
+}*/
+
+/*****SECTION PRODUCT**************************/
+section .product {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.best {
+    position: relative;
+    height: 700px;
+    width: 100%;
+}
+
+.best .best_img {
+    position: absolute;
+    left: 0;
+}
+
+.best .best_img h2 {
+    font-size: 25px;
+    display: inline-block;
+    font-weight: 400;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 70px;
+    left: 0;
+    color: #ccc;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.best .best_img img {
+    position: absolute;
+    left: 120px;
+}
+
+.best .best_txt {
+    position: absolute;
+    left: 700px;
+    top: 90px;
+}
+
+.best .best_txt h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 28px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.best .best_txt p {
+    line-height: 25px;
+    letter-spacing: -1px;
+}
+
+.best_list {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+.best .best_list .small_img {
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+}
+
+/**NEW******************/
+.new {
+    margin-top: 250px;
+    height: 700px;
+    position: relative;
+}
+
+.new_txt {
+    position: absolute;
+    right: 700px;
+    top: 90px;
+}
+
+.new_txt h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 28px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.new_txt p {
+    line-height: 25px;
+    letter-spacing: -1px;
+    text-align: right;
+}
+
+.new_txt .btn {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+}
+
+.new_img h2 {
+    font-size: 25px;
+    font-weight: 400;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 65px;
+    right: 0;
+    color: #ccc;
+}
+
+.new_img img {
+    position: absolute;
+    right: 120px;
+}
+
+.new_list {
+    position: absolute;
+    left: 20px;
+    bottom: 0;
+}
+
+.new_list .small_img {
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+}
+
+/*공통디자인*/
+.small_img a p {
+    letter-spacing: -0.8px;
+    font-weight: 600;
+    font-size: 13px;
+    position: relative;
+    top: -30px;
+    transition: all 1s;
+    opacity: 0;
+}
+
+.small_img a:hover p {
+    letter-spacing: -0.8px;
+    font-weight: 600;
+    font-size: 13px;
+    top: 0;
+    opacity: 1;
+}
+
+/**GIFT******************/
+
+.gift {
+    margin-top: 250px;
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+
+.gift .gift_img {
+    position: absolute;
+    left: 0;
+}
+
+.gift .gift_img h2 {
+    font-size: 25px;
+    display: inline-block;
+    font-weight: 400;
+    position: absolute;
+    transform: rotate(-90deg);
+    top: 80px;
+    left: -30px;
+    color: #ccc;
+}
+
+.gift .gift_img img {
+    position: absolute;
+    left: 120px;
+}
+
+.gift .gift_txt {
+    position: absolute;
+    left: 700px;
+    top: 90px;
+}
+
+.gift .gift_txt h3 {
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 28px;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+.gift .gift_txt p {
+    line-height: 25px;
+    letter-spacing: -1px;
+}
+
+.gift_list {
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+}
+
+.gift .gift_list .small_img {
+    float: left;
+    text-align: center;
+    margin-left: 20px;
+}
+
+.storeBtn {
+    display: block;
+    width: 150px;
+    height: 20px;
+    margin: 0 auto;
+    padding: 10px 40px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 60px;
+    letter-spacing: -0.8px;
+}
+
+.storeBtn:hover {
+    color: #fff;
+    background-color: #333;
+    -webkit-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+/**TV******************/
+.tv {
+    /*width: 1280px;*/
+    width: 100%;
+    /*height: 900px;*/
+    margin: 0 auto;
+    margin-top: 200px;
+    position: relative; /*btn의 기준*/
+    overflow: hidden;
+}
+
+.tv h2 {
+    text-align: center;
+    padding-bottom: 100px;
+    font-size: 26px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*플레이 박스 - 실제로 보여지는 부분*/
+.playbox {
+    /*width: 50%;*/
+    width: 960px;
+    /*height: 100%;*/
+    height: 600px;
+    margin: 0 auto;
+    /*position: relative;
+    left: 50%;
+    transform: translateX(-50%);*/
+    /*outline: 2px solid red;*/
+    
+    position: relative;
+    /*box의 위치 기준!*/
+}
+
+/*play 공통디자인(iframe부모요소)*/
+.playbox .box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*top: 0;*/
+    /*outline: 3px solid blue;*/
+}
+
+.playbox .box iframe {
+    width: 100%;
+    height: 90%;
+}
+.playbox .box p {
+    margin-top: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*play 개별디자인*/
+/*왼쪽2*/
+.play1 {
+    -webkit-transform: scale(0.86);
+    -ms-transform: scale(0.86);
+    transform: scale(0.86);
+    left: -200%;
+    opacity: 0.7;
+}
+
+/*왼쪽1*/
+.play2 {
+    -webkit-transform: scale(0.86);
+    -ms-transform: scale(0.86);
+    transform: scale(0.86);
+    left: -100%;
+    opacity: 0.7;
+}
+
+/*중앙이미지*/
+.play3 {
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*오른쪽1*/
+.play4 {
+    -webkit-transform: scale(0.86);
+    -ms-transform: scale(0.86);
+    transform: scale(0.86);
+    right: -100%;
+    opacity: 0.7;
+}
+
+/*오른쪽2*/
+.play5 {
+    -webkit-transform: scale(0.86);
+    -ms-transform: scale(0.86);
+    transform: scale(0.86);
+    right: -200%;
+    opacity: 0.7;
+}
+
+
+/*버튼 css*/
+.tv .tvBtn {
+    width: 37px;
+    height: 71px;
+    outline: 3px solid red;
+    position: absolute;
+    top: 50%;
+    margin-top: -35.5px;
+    display: block;
+}
+.tv .left_arw {
+    left: -52px;
+}
+.tv .right_arw {
+    right: -52px;
+}
+
+
+/**INFORMATION******************/
+.information {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.information h2 {
+    margin-top: 250px;
+    text-align: center;
+    margin-bottom: 80px;
+    font-size: 25px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: -0.8px;
+    
+}
+
+.information h2 span {
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+.info_wrap a {
+    text-align: center;
+}
+
+.info_wrap a img {
+    width: 100%;
+    padding: 10px 0;
+}
+
+/**INSTAGRAM******************/
+.instagram {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.instagram h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 250px;
+}
+
+.instagram > p {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 80px;
+}
+
+.instagram .img_wrap {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.instagram .img_wrap .image_box {
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+.instagram .img_wrap .image_box:nth-child(4n) {
+    margin-right: 0;
+}
+
+.instagram .img_wrap .image_box a {
+    display: block;
+    overflow: hidden;
+}
+
+.instagram .img_wrap .image_box a:hover img {
+    transform: scale(1.3);
+}
+
+.instagram .img_wrap .image_box a img {
+    width: 100%;
+    float: left;
+    display: block;
+    transition: all 0.5s;
+}
+
+
+
+/****공통디자인**********/
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 70px 0;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #333;
+    transition: all .5s ease-in-out;
+}
